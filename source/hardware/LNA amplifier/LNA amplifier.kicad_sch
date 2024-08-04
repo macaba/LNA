@@ -1,5 +1,5934 @@
-(kicad_sch (version 20231120) (generator "eeschema") (generator_version "8.0")
-  (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "2d8e6652-03d7-421b-89e4-394e45870b63")
+	(paper "A3")
+	(lib_symbols
+		(symbol "Amplifier_Operational:OP07"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U1"
+				(at 8.89 6.3186 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "OP07"
+				(at 8.89 3.7786 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.27 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf"
+				(at 1.27 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Ultra-Low Offset Voltage Operational Amplifier, DIP-8/SOIC-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "single opamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x4.9mm*P1.27mm* TO*99*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "OP07_0_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "OP07_1_1"
+				(pin input line
+					(at 0 -7.62 90)
+					(length 5.08) hide
+					(name "VOS"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 0 2.54 270)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 2.54 -7.62 90)
+					(length 6.35) hide
+					(name "VOS"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_Potentiometer"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Potentiometer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Potentiometer_0_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Transistor_FET:JFE2140D"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "JFE2140D"
+				(at 8.89 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "low noise n-channel dual matched jfet"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC?8*3.9x4.9mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "JFE2140D_1_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 -1.27) (xy 0.254 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.397) (xy 0.254 1.397)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy -1.016 0.381) (xy -1.016 -0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 5.334)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "JFE2140D_2_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 -1.27) (xy 0.254 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.397) (xy 0.254 1.397)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy -1.016 0.381) (xy -1.016 -0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 5.334)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "JFE2140D_3_0"
+				(pin passive line
+					(at 0 10.16 270)
+					(length 5.08)
+					(name "VCH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 90)
+					(length 5.08)
+					(name "VCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "JFE2140D_3_1"
+				(rectangle
+					(start -2.54 5.08)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+		)
+		(symbol "power:+15V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+15V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+15V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+15V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+15V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:-15V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "-15V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"-15V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "-15V_0_0"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "-15V_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 236.22 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0088a62c-21ba-4e70-8442-881de4f26cf5")
+	)
+	(junction
+		(at 222.25 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0cbd93b9-39b2-4391-8759-8f911f52fb69")
+	)
+	(junction
+		(at 208.28 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11810777-c707-4476-b3d7-6a2d140ca530")
+	)
+	(junction
+		(at 128.27 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c45848e-f9e0-4e03-8106-64715f4c4bb5")
+	)
+	(junction
+		(at 182.88 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "25827649-4b3f-47cd-9729-6b5f769cec07")
+	)
+	(junction
+		(at 271.78 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ecdc78c-d076-4271-b46d-a7b15ebaf635")
+	)
+	(junction
+		(at 208.28 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f6fd06d-98a9-4fdd-ab06-bd331bf4d36d")
+	)
+	(junction
+		(at 294.64 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3553e6d7-23f9-46a1-a067-4b6778cf95da")
+	)
+	(junction
+		(at 208.28 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37a8cf9c-97ab-416c-9b94-499ef8585bc8")
+	)
+	(junction
+		(at 154.94 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f090b11-51ca-4808-b457-8e80f0d96958")
+	)
+	(junction
+		(at 232.41 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4733496d-62ff-4d2a-b69d-7a0617d1f35a")
+	)
+	(junction
+		(at 208.28 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c9965c7-4729-4fec-b82b-c7a0b12f5f6a")
+	)
+	(junction
+		(at 294.64 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52bda381-ccff-426a-bd7c-a6f7def0b850")
+	)
+	(junction
+		(at 304.8 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a904154-23c1-48a5-ab3f-3d39a997c7e9")
+	)
+	(junction
+		(at 158.75 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5def33e6-e98c-45e4-8545-dbb7a2d9b6aa")
+	)
+	(junction
+		(at 182.88 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c71edeb-961f-454f-813e-55bab8ec9eac")
+	)
+	(junction
+		(at 182.88 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89686610-3ee5-48e2-8c34-96d0f3ed84ab")
+	)
+	(junction
+		(at 208.28 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bececa5-1d93-4a93-a699-e5d754f87951")
+	)
+	(junction
+		(at 250.19 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99fd7d0e-a21e-4797-9eb4-42bb026d579b")
+	)
+	(junction
+		(at 271.78 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a652dddc-835f-43f5-a066-bfe327eca955")
+	)
+	(junction
+		(at 144.78 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aba596f5-8719-491e-bae0-3ec1d82c156e")
+	)
+	(junction
+		(at 246.38 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3c775f7-7d45-42f1-96d9-d6d4cb4e60a1")
+	)
+	(junction
+		(at 260.35 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd8b3e95-2376-4357-928b-05e8de610e72")
+	)
+	(junction
+		(at 168.91 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf8489ff-4807-4784-b12a-b6387282275b")
+	)
+	(junction
+		(at 304.8 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5cc81f9-dae1-4400-8be9-3dabfafdf755")
+	)
+	(junction
+		(at 236.22 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2749d30-1993-47d3-888c-6460eee0650c")
+	)
+	(junction
+		(at 182.88 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4022986-98e8-4a1e-b181-b7b7a0d05cd8")
+	)
+	(junction
+		(at 222.25 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9aaf23b-01bf-4a0f-857b-f84543b80c0d")
+	)
+	(no_connect
+		(at 279.4 276.86)
+		(uuid "20bcb5c8-4577-4954-af7c-c510f70bc30c")
+	)
+	(no_connect
+		(at 228.6 276.86)
+		(uuid "2709159c-e0a8-4e2e-ad9d-989781e1836b")
+	)
+	(no_connect
+		(at 203.2 276.86)
+		(uuid "36224ce0-a4df-4652-966a-d0a56f41b2c3")
+	)
+	(no_connect
+		(at 228.6 256.54)
+		(uuid "5658f42c-3fd8-474d-9345-40533c335c8f")
+	)
+	(no_connect
+		(at 254 256.54)
+		(uuid "630635e7-0c94-4719-a3f2-8ef88b886e10")
+	)
+	(no_connect
+		(at 203.2 256.54)
+		(uuid "6fef42c5-127e-424f-842f-5bfcefb8eb68")
+	)
+	(no_connect
+		(at 254 276.86)
+		(uuid "b29e6e80-f48d-4458-a50b-da2b9bfdb031")
+	)
+	(no_connect
+		(at 279.4 256.54)
+		(uuid "e85b08f5-cbe9-4121-be62-6015650a3e6a")
+	)
+	(wire
+		(pts
+			(xy 250.19 144.78) (xy 250.19 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02d99515-ac3d-4e5f-9c7e-5aaf12bd44f5")
+	)
+	(wire
+		(pts
+			(xy 195.58 85.09) (xy 195.58 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02f50c17-7f36-459d-8da7-4d9c116a2a12")
+	)
+	(wire
+		(pts
+			(xy 218.44 99.06) (xy 218.44 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a69562e-dd7d-4319-b422-6043cd67b13f")
+	)
+	(wire
+		(pts
+			(xy 246.38 142.24) (xy 246.38 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f2cce1c-81be-44d6-9af0-ec9421138ac3")
+	)
+	(wire
+		(pts
+			(xy 246.38 142.24) (xy 232.41 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "112e076d-01fb-4bbb-9474-353fd4c20b81")
+	)
+	(wire
+		(pts
+			(xy 232.41 149.86) (xy 229.87 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1267b62a-0a75-4fa8-bd66-84ee6ce5bc70")
+	)
+	(wire
+		(pts
+			(xy 154.94 154.94) (xy 154.94 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12c6b5e4-656f-4555-8c18-084ae9a05d5b")
+	)
+	(wire
+		(pts
+			(xy 158.75 149.86) (xy 161.29 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15796a3c-5ff8-481c-bad5-8515419ab8a0")
+	)
+	(wire
+		(pts
+			(xy 222.25 175.26) (xy 222.25 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "181f106b-1f2e-4e4a-ba6e-48f415440e5a")
+	)
+	(wire
+		(pts
+			(xy 271.78 115.57) (xy 274.32 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18cf4abd-e5e2-4cf2-9a84-9eecbd7549da")
+	)
+	(wire
+		(pts
+			(xy 128.27 149.86) (xy 133.35 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18f5894a-38a3-4cf2-bfc6-c87504258369")
+	)
+	(wire
+		(pts
+			(xy 154.94 139.7) (xy 168.91 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a1ad363-1aca-4167-8fbf-21f6086dc7be")
+	)
+	(wire
+		(pts
+			(xy 222.25 160.02) (xy 222.25 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fb533dd-c838-402d-b777-a856710ce7c0")
+	)
+	(wire
+		(pts
+			(xy 182.88 91.44) (xy 182.88 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fc00136-a189-408e-95e0-f2ea19892e47")
+	)
+	(wire
+		(pts
+			(xy 279.4 138.43) (xy 281.94 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20335465-0e35-4810-a8bf-04662f527558")
+	)
+	(wire
+		(pts
+			(xy 304.8 149.86) (xy 304.8 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21767ca3-cfdd-4bd4-88cd-8fcf6fa21c8c")
+	)
+	(wire
+		(pts
+			(xy 182.88 139.7) (xy 182.88 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "271f5d9c-955d-4986-af4b-361da6bda992")
+	)
+	(wire
+		(pts
+			(xy 182.88 99.06) (xy 182.88 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27e4e3ca-6f21-47a9-ab12-bd9d38490196")
+	)
+	(wire
+		(pts
+			(xy 304.8 149.86) (xy 320.04 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "285ac8f6-eb33-4063-b76d-910af56280c8")
+	)
+	(wire
+		(pts
+			(xy 140.97 154.94) (xy 140.97 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "297a2e9d-72a7-476b-90d6-aecae2e7e5d1")
+	)
+	(wire
+		(pts
+			(xy 168.91 154.94) (xy 168.91 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32bbfdb1-6bbe-493c-b98a-aa799fcfa7d8")
+	)
+	(wire
+		(pts
+			(xy 172.72 109.22) (xy 172.72 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33e9d846-68d2-45d9-a9ee-4a395f85b025")
+	)
+	(wire
+		(pts
+			(xy 218.44 142.24) (xy 218.44 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35184623-1b6a-4480-8ddc-480ef7e1b31d")
+	)
+	(wire
+		(pts
+			(xy 271.78 110.49) (xy 271.78 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "391ea21a-98b7-44cc-86ba-bb41569c65f8")
+	)
+	(wire
+		(pts
+			(xy 222.25 154.94) (xy 222.25 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b9fc9d2-f21e-490f-b695-3cb6c774b333")
+	)
+	(wire
+		(pts
+			(xy 208.28 101.6) (xy 208.28 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d2652f2-9ed7-4ec3-b076-980fe6941b54")
+	)
+	(wire
+		(pts
+			(xy 250.19 175.26) (xy 250.19 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40221537-e5cd-4c3c-b32a-290fcd04aee1")
+	)
+	(wire
+		(pts
+			(xy 236.22 175.26) (xy 236.22 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "424f2936-68eb-4549-952f-6ed6a71c6755")
+	)
+	(wire
+		(pts
+			(xy 154.94 162.56) (xy 236.22 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46a6f332-c239-40cf-be57-e7ac58ef47d2")
+	)
+	(wire
+		(pts
+			(xy 208.28 123.19) (xy 208.28 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47e4f7c8-caf5-48e5-86f1-e435a5cb4c78")
+	)
+	(wire
+		(pts
+			(xy 128.27 165.1) (xy 128.27 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fbb9bf6-3a62-480d-9442-1e61ae669d30")
+	)
+	(wire
+		(pts
+			(xy 294.64 137.16) (xy 294.64 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "515a99b7-38e9-449c-a9d2-a3589a32d574")
+	)
+	(wire
+		(pts
+			(xy 140.97 165.1) (xy 250.19 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5196166c-ba7f-4ad1-9ff1-c8db72ab8713")
+	)
+	(wire
+		(pts
+			(xy 158.75 142.24) (xy 172.72 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52637ee6-77f4-4ca0-bb99-4e1a02f2875e")
+	)
+	(wire
+		(pts
+			(xy 236.22 162.56) (xy 236.22 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5407604b-c8b0-493d-8628-c9a43305b627")
+	)
+	(wire
+		(pts
+			(xy 208.28 154.94) (xy 208.28 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "552f3aca-926b-4cb3-b1cf-68ec858c2c6e")
+	)
+	(wire
+		(pts
+			(xy 279.4 115.57) (xy 281.94 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5606bd55-b998-4d9c-b224-681fbb0b7ede")
+	)
+	(wire
+		(pts
+			(xy 236.22 139.7) (xy 222.25 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "595f4e2f-369d-403c-82bc-5de8d8112188")
+	)
+	(wire
+		(pts
+			(xy 144.78 149.86) (xy 147.32 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59b0a5c8-bf9f-4a5b-aa11-08d36b71c9b5")
+	)
+	(wire
+		(pts
+			(xy 307.34 137.16) (xy 304.8 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b523171-38dc-4bdb-953a-707f4f482c69")
+	)
+	(wire
+		(pts
+			(xy 320.04 137.16) (xy 317.5 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b6a49ae-aa60-4eb0-8e0a-e502406e69bd")
+	)
+	(wire
+		(pts
+			(xy 123.19 149.86) (xy 128.27 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d2c60e6-b45d-436b-85ed-4191fcc927d8")
+	)
+	(wire
+		(pts
+			(xy 208.28 109.22) (xy 208.28 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d3ed7eb-e261-4015-8100-dea949871537")
+	)
+	(wire
+		(pts
+			(xy 320.04 140.97) (xy 320.04 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d9ce968-5a43-4fdd-8e8b-978ed9102ad4")
+	)
+	(wire
+		(pts
+			(xy 304.8 137.16) (xy 294.64 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e63298d-5197-42fe-8236-25b5f72bced4")
+	)
+	(wire
+		(pts
+			(xy 168.91 160.02) (xy 222.25 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fefe75e-7a7d-4fc7-af85-d04ffce36589")
+	)
+	(wire
+		(pts
+			(xy 257.81 149.86) (xy 260.35 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62035d70-a28c-4717-81ec-308729971638")
+	)
+	(wire
+		(pts
+			(xy 144.78 142.24) (xy 158.75 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "624c4e24-4ea3-431a-b2fb-81bbc138d5ad")
+	)
+	(wire
+		(pts
+			(xy 182.88 91.44) (xy 191.77 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64fafaae-17cc-400b-8994-bbe7be0e0db6")
+	)
+	(wire
+		(pts
+			(xy 236.22 154.94) (xy 236.22 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68860537-0f46-4cd8-b2da-8d76688adb13")
+	)
+	(wire
+		(pts
+			(xy 199.39 91.44) (xy 208.28 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69cafcf6-fd1c-4e52-835c-4150730b695e")
+	)
+	(wire
+		(pts
+			(xy 250.19 139.7) (xy 236.22 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c830362-9ed7-4e8d-b0dd-c239ebc49693")
+	)
+	(wire
+		(pts
+			(xy 236.22 139.7) (xy 236.22 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d5da315-eb5c-4fcc-bf30-19f1ef04f1b5")
+	)
+	(wire
+		(pts
+			(xy 172.72 99.06) (xy 182.88 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73b3cf20-ad76-4d97-a5ab-ab3fc1acd817")
+	)
+	(wire
+		(pts
+			(xy 168.91 139.7) (xy 182.88 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "783722b9-107a-4e44-a444-ddda11ef179a")
+	)
+	(wire
+		(pts
+			(xy 182.88 111.76) (xy 182.88 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78bb6d5f-1d91-4731-8508-5d0cdcbc2cbd")
+	)
+	(wire
+		(pts
+			(xy 172.72 101.6) (xy 172.72 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7be962e2-215a-42d8-bbb4-81cf0ee5bc8e")
+	)
+	(wire
+		(pts
+			(xy 218.44 149.86) (xy 215.9 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c0b128e-97dd-4923-b5bb-a228f2e4e57c")
+	)
+	(wire
+		(pts
+			(xy 140.97 139.7) (xy 154.94 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d4f2cd6-12d0-41dd-a96c-596ef999479b")
+	)
+	(wire
+		(pts
+			(xy 294.64 125.73) (xy 294.64 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7feb5fc7-bd70-47ef-8c7c-4c103408b504")
+	)
+	(wire
+		(pts
+			(xy 271.78 138.43) (xy 271.78 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "821f17df-b8ea-4f5c-b9f2-a3f14e5ad86c")
+	)
+	(wire
+		(pts
+			(xy 222.25 139.7) (xy 208.28 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "824f29bc-3b02-4528-b4b7-fe447c2d09c4")
+	)
+	(wire
+		(pts
+			(xy 208.28 123.19) (xy 266.7 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84b22141-e4d1-448b-a45c-40eca85edce4")
+	)
+	(wire
+		(pts
+			(xy 320.04 149.86) (xy 320.04 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84c92ba4-2d1a-40a0-8993-a182d6efb525")
+	)
+	(wire
+		(pts
+			(xy 182.88 128.27) (xy 182.88 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84ea0f2a-5603-4ad9-80c5-4858e334eb41")
+	)
+	(wire
+		(pts
+			(xy 158.75 142.24) (xy 158.75 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cbc266d-e0b2-4115-af15-d4fb9a092f7b")
+	)
+	(wire
+		(pts
+			(xy 172.72 111.76) (xy 182.88 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9185b7e3-42fd-4b15-afda-f92bff2a4205")
+	)
+	(wire
+		(pts
+			(xy 128.27 176.53) (xy 128.27 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "920d8bff-7c59-4097-ab5e-ad3a5b04d79b")
+	)
+	(wire
+		(pts
+			(xy 250.19 165.1) (xy 250.19 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94047c03-3c7a-4373-80a0-fc4b7ed09f9d")
+	)
+	(wire
+		(pts
+			(xy 260.35 149.86) (xy 294.64 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9484fd78-86da-499f-9181-b1a075c16c86")
+	)
+	(wire
+		(pts
+			(xy 140.97 144.78) (xy 140.97 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a07acd4c-4233-4a04-8c71-7eb43e3fc1e9")
+	)
+	(wire
+		(pts
+			(xy 294.64 147.32) (xy 294.64 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1fa06bf-e55b-406e-94e7-9abd87192f7b")
+	)
+	(wire
+		(pts
+			(xy 218.44 111.76) (xy 218.44 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5f03028-c9c6-4818-bf32-f5db3663bf0d")
+	)
+	(wire
+		(pts
+			(xy 208.28 91.44) (xy 208.28 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a808a2eb-342e-49d2-ba8e-2b21a1fc4961")
+	)
+	(wire
+		(pts
+			(xy 144.78 142.24) (xy 144.78 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac6c6568-31ce-40c3-bb89-3a6d6efbadb7")
+	)
+	(wire
+		(pts
+			(xy 304.8 140.97) (xy 304.8 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae332144-6731-4bb7-8345-4361397742ff")
+	)
+	(wire
+		(pts
+			(xy 232.41 142.24) (xy 218.44 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2a49965-1609-425b-8ff3-31880e7c2db2")
+	)
+	(wire
+		(pts
+			(xy 208.28 99.06) (xy 218.44 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2b184b9-0bb5-47fa-9971-a1e12c2570a3")
+	)
+	(wire
+		(pts
+			(xy 208.28 157.48) (xy 208.28 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3c43363-a84a-4be8-bfbe-47f769c9f64f")
+	)
+	(wire
+		(pts
+			(xy 128.27 142.24) (xy 144.78 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3d62144-16f3-444f-b6bc-d596ae34bcc0")
+	)
+	(wire
+		(pts
+			(xy 110.49 149.86) (xy 118.11 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b59fe32d-e062-4b93-956a-4c94ebda8828")
+	)
+	(wire
+		(pts
+			(xy 271.78 138.43) (xy 274.32 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6145c95-0458-4233-b220-74d88b5808d1")
+	)
+	(wire
+		(pts
+			(xy 260.35 149.86) (xy 260.35 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b833a92a-533f-45cb-88db-b83b108fb407")
+	)
+	(wire
+		(pts
+			(xy 182.88 154.94) (xy 182.88 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c180ae57-2edf-49e3-9200-675679556f0b")
+	)
+	(wire
+		(pts
+			(xy 294.64 149.86) (xy 304.8 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5bc9b54-6fb5-4d10-b02e-58daa425dc6d")
+	)
+	(wire
+		(pts
+			(xy 294.64 149.86) (xy 294.64 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c68e01a4-98c4-4307-86d6-3c43119652fa")
+	)
+	(wire
+		(pts
+			(xy 208.28 139.7) (xy 208.28 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7ee9055-2c29-49bc-b7e4-916f45b179fc")
+	)
+	(wire
+		(pts
+			(xy 232.41 142.24) (xy 232.41 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caaacfd7-19af-4457-90a2-ecad13d9ca34")
+	)
+	(wire
+		(pts
+			(xy 281.94 125.73) (xy 294.64 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb26d0e7-66ef-474a-b4c6-184e4f4fe742")
+	)
+	(wire
+		(pts
+			(xy 182.88 157.48) (xy 208.28 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6fe0624-e10f-4cfc-8da3-bf7ffd37a5ce")
+	)
+	(wire
+		(pts
+			(xy 172.72 142.24) (xy 172.72 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d850d04a-83dc-46d5-b797-57d9f0403531")
+	)
+	(wire
+		(pts
+			(xy 168.91 139.7) (xy 168.91 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dabfa977-cab6-4bd9-9f6c-dbaae31e0794")
+	)
+	(wire
+		(pts
+			(xy 250.19 154.94) (xy 250.19 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dce17c67-34ac-43c2-abf5-df1a49fe0f69")
+	)
+	(wire
+		(pts
+			(xy 271.78 133.35) (xy 271.78 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd272c14-53b0-4404-9e0e-48d6c9d70fd1")
+	)
+	(wire
+		(pts
+			(xy 154.94 139.7) (xy 154.94 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddb3d923-d172-4e86-bd30-4bda9da26e6d")
+	)
+	(wire
+		(pts
+			(xy 208.28 111.76) (xy 208.28 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e069137b-3f2f-487b-a342-9e8338ad8114")
+	)
+	(wire
+		(pts
+			(xy 172.72 149.86) (xy 175.26 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0bab239-64a9-42c9-943c-d248622ec78d")
+	)
+	(wire
+		(pts
+			(xy 182.88 128.27) (xy 266.7 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e13246c3-5203-49d2-8d08-d22cff6249ff")
+	)
+	(wire
+		(pts
+			(xy 208.28 175.26) (xy 208.28 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee6716f5-25fe-401e-b8be-79dc6a900e79")
+	)
+	(wire
+		(pts
+			(xy 260.35 142.24) (xy 246.38 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0f297dd-7269-46ea-99d4-9350dcd38979")
+	)
+	(wire
+		(pts
+			(xy 246.38 149.86) (xy 243.84 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2abf57f-6aad-448e-81ab-5162b026bba6")
+	)
+	(wire
+		(pts
+			(xy 271.78 115.57) (xy 271.78 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5afb918-90af-4d12-9e2c-087738e04479")
+	)
+	(wire
+		(pts
+			(xy 128.27 149.86) (xy 128.27 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9b99bd5-85bc-4df6-ab42-baf3baffa520")
+	)
+	(wire
+		(pts
+			(xy 208.28 111.76) (xy 218.44 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa19cfd4-a2cb-4872-b462-a2691617b370")
+	)
+	(wire
+		(pts
+			(xy 294.64 160.02) (xy 294.64 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa510bb0-8344-43cc-9f41-f5e7373b28f1")
+	)
+	(wire
+		(pts
+			(xy 128.27 149.86) (xy 128.27 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa5abb3e-019f-472e-808d-f3b728c89220")
+	)
+	(wire
+		(pts
+			(xy 222.25 139.7) (xy 222.25 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcffae52-1df5-4a6b-a6ad-a3210f0dee0b")
+	)
+	(wire
+		(pts
+			(xy 182.88 111.76) (xy 182.88 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe5d0438-fff1-4905-b466-a4a4498db703")
+	)
+	(label "INPUT"
+		(at 110.49 149.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "885ec4d7-091e-4079-93db-906bce0169a6")
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 195.58 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "010e9b82-4a95-420d-b707-c5e75ea8f80b")
+		(property "Reference" "RV1"
+			(at 195.58 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "200Ω"
+			(at 195.58 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 195.58 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4857bff0-2a84-4ee9-9bb6-7f194414370f")
+		)
+		(pin "3"
+			(uuid "9c06e51f-1a09-4e2b-9ef9-c64b044e407e")
+		)
+		(pin "2"
+			(uuid "15bec8de-7a27-45c2-8e79-f0b336b472cc")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 208.28 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1840e33c-c014-480d-a018-79cefd76eb96")
+		(property "Reference" "R6"
+			(at 210.82 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150Ω"
+			(at 210.82 172.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 206.502 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 208.28 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "629fa8da-bcfc-4138-9842-2088bc586ac8")
+		)
+		(pin "2"
+			(uuid "53a2ef68-5d62-443b-93e7-bf6a3bdf353e")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 222.25 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c220ca3-1145-4b42-b8e0-8d5728f028eb")
+		(property "Reference" "R8"
+			(at 224.79 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150Ω"
+			(at 224.79 172.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.472 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 222.25 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 222.25 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "806f5190-6c9e-4a01-9d6c-83026bf4bb40")
+		)
+		(pin "2"
+			(uuid "97099f3f-213c-4be9-be54-56e88b6a605e")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d88a24d-a49a-4a0f-b4d8-51161ea60c71")
+		(property "Reference" "#PWR05"
+			(at 236.22 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 236.22 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c64fd4e1-e4a0-42b1-9b30-ab56c9440f8c")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:JFE2140D")
+		(at 252.73 149.86 180)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "316ac7e2-dfee-4ec6-a185-bfe08c919d1c")
+		(property "Reference" "Q1"
+			(at 247.65 153.035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JFE2140D"
+			(at 247.65 155.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 252.73 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+			(at 252.73 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+			(at 252.73 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "0bb90b38-87aa-46c5-9fb2-ef03decd0d0c")
+		)
+		(pin "8"
+			(uuid "c1bb9694-3c0f-499d-b094-50c6a951f6da")
+		)
+		(pin "3"
+			(uuid "8d711768-40f7-4125-9c83-f3f79b128562")
+		)
+		(pin "7"
+			(uuid "36a28f73-c9a7-4062-8072-f7a779e92eed")
+		)
+		(pin "2"
+			(uuid "e62ddc21-f8b5-4c5f-84f0-4149fb93ce30")
+		)
+		(pin "6"
+			(uuid "1293a175-4f35-4cd6-a010-80f7a4c509b1")
+		)
+		(pin "4"
+			(uuid "2ec97984-d689-4c47-9b6e-0df23fb5015d")
+		)
+		(pin "1"
+			(uuid "7ba7b2d4-9878-4c23-947d-56aa340b80cc")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "Q1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+15V")
+		(at 271.78 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "370ba583-422e-42cb-9c3f-7b6f44b85eed")
+		(property "Reference" "#PWR07"
+			(at 271.78 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+15V"
+			(at 271.78 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 271.78 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3897cde3-c732-4891-84e2-2c7bc5327c8d")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 294.64 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38199a8e-5f23-4afb-8dae-549299576c76")
+		(property "Reference" "#PWR011"
+			(at 294.64 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 294.64 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 294.64 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 294.64 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 294.64 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "581913b7-fdb3-4c53-9364-f810eb974442")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:JFE2140D")
+		(at 152.4 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "391c3286-6f6f-4a62-b6e2-7037b4a0546a")
+		(property "Reference" "Q2"
+			(at 156.845 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JFE2140D"
+			(at 156.845 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 152.4 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+			(at 152.4 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+			(at 152.4 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14c69152-065f-443f-953f-9437e9b92dfe")
+		)
+		(pin "4"
+			(uuid "3ce74d4c-0679-46f1-8c94-3813c577675f")
+		)
+		(pin "3"
+			(uuid "57c11dd2-ccd6-4ed2-80ce-a2e39bf0cffe")
+		)
+		(pin "5"
+			(uuid "3ac0fa93-2fbe-4fec-9c89-fb5b221a3a4e")
+		)
+		(pin "7"
+			(uuid "3d5904fc-37ce-49b5-be4e-74c1151662b1")
+		)
+		(pin "6"
+			(uuid "88a145f2-93d0-42eb-b246-5053a02b0072")
+		)
+		(pin "8"
+			(uuid "88034499-8f3e-49e3-91ca-dfef22b84b65")
+		)
+		(pin "2"
+			(uuid "5d64592f-e49f-4029-8417-aee7e345f6cd")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 294.64 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "393a54ab-af59-4e4e-8d91-bad3a5e66c52")
+		(property "Reference" "R12"
+			(at 297.18 154.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5Ω"
+			(at 297.18 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 292.862 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 294.64 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 294.64 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bba32b8e-f434-40b1-984b-ab75d5485c7f")
+		)
+		(pin "2"
+			(uuid "a266edf0-cdc4-4a15-89ea-2a18db460ab6")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:JFE2140D")
+		(at 203.2 266.7 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c62b01f-227c-482c-b37f-7aca913c4875")
+		(property "Reference" "Q1"
+			(at 207.01 265.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JFE2140D"
+			(at 207.01 267.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 203.2 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+			(at 203.2 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+			(at 203.2 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "2f5d4ac6-2ba2-4d4c-ab5f-c37e77516dd9")
+		)
+		(pin "8"
+			(uuid "61a10bca-f3ff-4043-9c2e-b44a534a0734")
+		)
+		(pin "3"
+			(uuid "ab14c764-e660-481f-be0d-1b1b4a56cfee")
+		)
+		(pin "7"
+			(uuid "42125880-0016-4267-b10e-3639c50b52dd")
+		)
+		(pin "2"
+			(uuid "e62ddc21-f8b5-4c5f-84f0-4149fb93ce2e")
+		)
+		(pin "6"
+			(uuid "8c46be88-10ea-4d7b-ace9-36dc89612c92")
+		)
+		(pin "4"
+			(uuid "2ec97984-d689-4c47-9b6e-0df23fb5015b")
+		)
+		(pin "1"
+			(uuid "7ba7b2d4-9878-4c23-947d-56aa340b80ca")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "Q1")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:JFE2140D")
+		(at 254 266.7 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "404895d8-60e2-4b14-b16b-29eaab49c8be")
+		(property "Reference" "Q3"
+			(at 257.81 265.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JFE2140D"
+			(at 257.81 267.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 254 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+			(at 254 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+			(at 254 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "878380a3-4b5c-4b12-9d3e-a7eb7304fcd7")
+		)
+		(pin "6"
+			(uuid "39a35604-bf11-4537-93d3-e30ac0841611")
+		)
+		(pin "7"
+			(uuid "da2c3718-4a3a-4b87-883a-449123c1c306")
+		)
+		(pin "4"
+			(uuid "0b10907c-5588-419c-9ae1-6e9c902ef84f")
+		)
+		(pin "1"
+			(uuid "acca186a-485e-441b-aeea-891c6a6fb60b")
+		)
+		(pin "3"
+			(uuid "850ade0d-a6e0-4d32-8ecf-a1c619934829")
+		)
+		(pin "5"
+			(uuid "c98af21c-b3a6-4f82-8418-c01095075a18")
+		)
+		(pin "2"
+			(uuid "f621a92c-43e2-4ab4-81b9-6805a8b271bd")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "Q3")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:JFE2140D")
+		(at 279.4 266.7 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "413314e3-543f-493b-aac7-b914eff4c888")
+		(property "Reference" "Q4"
+			(at 283.21 265.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JFE2140D"
+			(at 283.21 267.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 279.4 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+			(at 279.4 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+			(at 279.4 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "fa25f300-ea34-4030-9f59-fab34ecd7db3")
+		)
+		(pin "2"
+			(uuid "f7b5e0ed-0fda-49aa-9e79-46c48783a7b5")
+		)
+		(pin "1"
+			(uuid "6ea9297b-91a7-44f0-ab7b-eaa6c25ab467")
+		)
+		(pin "8"
+			(uuid "e871b656-14f6-4d2a-b68e-c8a328418ec1")
+		)
+		(pin "5"
+			(uuid "aa656d45-5cd6-4520-be15-52233052991b")
+		)
+		(pin "4"
+			(uuid "cedf5d7e-b80a-47c6-a24c-06fee86c2fc5")
+		)
+		(pin "3"
+			(uuid "15fd9c95-bda7-4ab4-b12a-62b558423f7d")
+		)
+		(pin "6"
+			(uuid "8fa042da-c2bc-4bd5-92eb-987fc653feff")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "Q4")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 320.04 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44a9d85c-fec9-47a9-ab6d-52a040e796c1")
+		(property "Reference" "C5"
+			(at 322.58 142.2462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330nF"
+			(at 322.58 144.7862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 320.04 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 320.04 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 320.04 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "61fb7a98-1ffa-45b6-8f42-d9c1be998495")
+		)
+		(pin "2"
+			(uuid "7c52ea78-c9bf-403f-9ac1-80fd7b2955c2")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 281.94 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49a1fb71-b0ee-4b54-9024-9de9cdac7f44")
+		(property "Reference" "#PWR010"
+			(at 288.29 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 285.75 138.4299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 281.94 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 281.94 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 281.94 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4098eead-d6bf-4cce-b45b-6b6c8b39f045")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 208.28 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f871b81-0e82-4ebe-adbf-f50482627700")
+		(property "Reference" "#PWR03"
+			(at 208.28 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 208.28 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 208.28 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28332d93-c8fc-4603-b1f6-4ee0eb8f948b")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:JFE2140D")
+		(at 180.34 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53b5a905-c52a-4ac9-93aa-a1c72dbf38e1")
+		(property "Reference" "Q4"
+			(at 184.785 153.035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JFE2140D"
+			(at 184.785 155.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 180.34 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+			(at 180.34 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+			(at 180.34 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "b41aed39-23b0-4b09-96d0-a488ec49ee36")
+		)
+		(pin "2"
+			(uuid "f66bc381-f227-4727-a9ed-d4693e4a40ad")
+		)
+		(pin "1"
+			(uuid "6be19bac-6a48-462a-94aa-583a9f3a5de5")
+		)
+		(pin "8"
+			(uuid "e871b656-14f6-4d2a-b68e-c8a328418ec3")
+		)
+		(pin "5"
+			(uuid "aa656d45-5cd6-4520-be15-52233052991d")
+		)
+		(pin "4"
+			(uuid "73fa4f6a-6e0e-496d-b456-3e50207c9795")
+		)
+		(pin "3"
+			(uuid "10865aab-21ef-4088-8cd8-e116fd1c710b")
+		)
+		(pin "6"
+			(uuid "8fa042da-c2bc-4bd5-92eb-987fc653ff01")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 172.72 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e4d5ef7-4405-4c3f-97dd-c46e23ef2f63")
+		(property "Reference" "R3"
+			(at 175.26 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150Ω"
+			(at 175.26 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.942 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 172.72 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ffa6ab49-bc9f-450a-ba22-a2c0fa194a97")
+		)
+		(pin "2"
+			(uuid "406dbeae-6a60-4517-b7ab-f34ddf15131e")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 304.8 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6bddd4a7-750c-4213-9a95-3d61c2f0bfcc")
+		(property "Reference" "C4"
+			(at 307.34 142.2462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2pF"
+			(at 307.34 144.7862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 304.8 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 304.8 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 304.8 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6126dad5-3f2d-466a-80fe-bf03d4599048")
+		)
+		(pin "2"
+			(uuid "b0c07092-39cc-4b7c-bfd5-288d88d0e220")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-15V")
+		(at 271.78 140.97 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7274d23b-884f-44d1-8693-95cc54c0ca40")
+		(property "Reference" "#PWR08"
+			(at 271.78 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-15V"
+			(at 271.78 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-15V\""
+			(at 271.78 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec84ed01-8117-41f5-8e2d-9446fafc20bd")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:JFE2140D")
+		(at 166.37 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78b709fa-ea2a-42be-814e-2e0e0dcb88f9")
+		(property "Reference" "Q3"
+			(at 170.815 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JFE2140D"
+			(at 170.815 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 166.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+			(at 166.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+			(at 166.37 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "878380a3-4b5c-4b12-9d3e-a7eb7304fcd6")
+		)
+		(pin "6"
+			(uuid "39a35604-bf11-4537-93d3-e30ac0841610")
+		)
+		(pin "7"
+			(uuid "a7bb65be-9e02-4997-916c-ef1d095dc513")
+		)
+		(pin "4"
+			(uuid "3e36a8ad-50be-4d5a-813c-3f1e5f921972")
+		)
+		(pin "1"
+			(uuid "45397a24-0ca3-4907-899a-1eac57beb822")
+		)
+		(pin "3"
+			(uuid "3b22db3c-4da5-4d88-8b60-434e47823fef")
+		)
+		(pin "5"
+			(uuid "c98af21c-b3a6-4f82-8418-c01095075a17")
+		)
+		(pin "2"
+			(uuid "bbb92bab-8847-445c-8e80-2f671749caa7")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 128.27 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b1892ac-9a7c-4f68-9604-fa0b9698fa12")
+		(property "Reference" "R2"
+			(at 130.81 171.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 130.81 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 126.492 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 128.27 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1c57bd9-ba3c-430f-964b-712f4466c1af")
+		)
+		(pin "2"
+			(uuid "c10c760f-800f-4477-8a93-1ee85a178539")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 120.65 149.86 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f0d6b6f-f565-4ad9-8757-fdab8ede387d")
+		(property "Reference" "C1"
+			(at 120.6563 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "80μF"
+			(at 120.6563 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 120.65 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e155da17-50ab-4960-bd4f-c5278bf8ce74")
+		)
+		(pin "2"
+			(uuid "34dd649a-00ad-4013-9642-3d1e8ae0d487")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:JFE2140D")
+		(at 228.6 266.7 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8fbedbd3-709f-477d-aefe-d3bff8c5e441")
+		(property "Reference" "Q2"
+			(at 232.41 265.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JFE2140D"
+			(at 232.41 267.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 228.6 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+			(at 228.6 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+			(at 228.6 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "801061e7-b16f-4f75-8381-1a5d214e510b")
+		)
+		(pin "4"
+			(uuid "cb4ea855-da60-4bfc-9602-7768332605fa")
+		)
+		(pin "3"
+			(uuid "954e40d7-eff8-4082-9f4d-9507168d3fb8")
+		)
+		(pin "5"
+			(uuid "3ac0fa93-2fbe-4fec-9c89-fb5b221a3a4f")
+		)
+		(pin "7"
+			(uuid "e319c1de-c1f8-4425-b8da-d3eab22ade82")
+		)
+		(pin "6"
+			(uuid "88a145f2-93d0-42eb-b246-5053a02b0073")
+		)
+		(pin "8"
+			(uuid "88034499-8f3e-49e3-91ca-dfef22b84b66")
+		)
+		(pin "2"
+			(uuid "d320119e-9850-404b-97e2-a3aa06eb3a8e")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "Q2")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 182.88 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "942cc829-69ce-45e1-b93a-1864c528df80")
+		(property "Reference" "R4"
+			(at 185.42 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150Ω"
+			(at 185.42 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.102 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 182.88 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed9c6b1a-c26b-43b1-9dd6-7e760bcbe0f6")
+		)
+		(pin "2"
+			(uuid "595f4b61-dfa1-4b3c-8ef3-19b8f8bf0333")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:JFE2140D")
+		(at 224.79 149.86 0)
+		(mirror y)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "985e8e87-1f22-404d-a8a2-8150d302e2f1")
+		(property "Reference" "Q3"
+			(at 219.71 153.035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JFE2140D"
+			(at 219.71 155.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 224.79 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+			(at 224.79 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+			(at 224.79 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "cfaab868-f519-4b9a-a090-2fd4e76aaeaf")
+		)
+		(pin "6"
+			(uuid "bb5dee83-5f75-44a0-9292-5c82ad205859")
+		)
+		(pin "7"
+			(uuid "a7bb65be-9e02-4997-916c-ef1d095dc515")
+		)
+		(pin "4"
+			(uuid "0b10907c-5588-419c-9ae1-6e9c902ef850")
+		)
+		(pin "1"
+			(uuid "acca186a-485e-441b-aeea-891c6a6fb60c")
+		)
+		(pin "3"
+			(uuid "3b22db3c-4da5-4d88-8b60-434e47823ff1")
+		)
+		(pin "5"
+			(uuid "6b41a103-ab63-4b58-985f-19df9ac745a0")
+		)
+		(pin "2"
+			(uuid "f621a92c-43e2-4ab4-81b9-6805a8b271be")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "Q3")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:JFE2140D")
+		(at 238.76 149.86 0)
+		(mirror y)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9b8ba780-6a93-41ae-9f72-34dde61d1ca1")
+		(property "Reference" "Q2"
+			(at 233.68 153.035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JFE2140D"
+			(at 233.68 155.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 238.76 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+			(at 238.76 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+			(at 238.76 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "801061e7-b16f-4f75-8381-1a5d214e5109")
+		)
+		(pin "4"
+			(uuid "cb4ea855-da60-4bfc-9602-7768332605f8")
+		)
+		(pin "3"
+			(uuid "57c11dd2-ccd6-4ed2-80ce-a2e39bf0cffd")
+		)
+		(pin "5"
+			(uuid "bde66cd3-1909-4c6f-9c97-a7f0ac2b7d48")
+		)
+		(pin "7"
+			(uuid "3d5904fc-37ce-49b5-be4e-74c1151662b0")
+		)
+		(pin "6"
+			(uuid "f4d4d6d1-8bab-4e76-b2a2-65176126f0e5")
+		)
+		(pin "8"
+			(uuid "7d2f770f-8c3e-4093-9a77-bda393187843")
+		)
+		(pin "2"
+			(uuid "d320119e-9850-404b-97e2-a3aa06eb3a8c")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "Q2")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 312.42 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d4c31e0-8505-48d0-a92e-2d5cd3ad8e7f")
+		(property "Reference" "SW1"
+			(at 312.42 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100Hz LPF"
+			(at 312.42 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 312.42 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 312.42 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 312.42 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5768947-ab80-4bf7-9492-78388dabf1ff")
+		)
+		(pin "2"
+			(uuid "9ce48af1-9aa3-41d0-a2f1-6cf91402712a")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:OP07")
+		(at 274.32 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9dd57f03-e855-4c30-ab42-8a27e231861f")
+		(property "Reference" "U1"
+			(at 283.21 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA210"
+			(at 283.21 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 275.59 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 275.59 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 274.32 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "e3ae9048-799a-4f42-8b6f-1a258bfaf597")
+		)
+		(pin "1"
+			(uuid "0be7b124-9a2f-4307-8938-928ce567605a")
+		)
+		(pin "7"
+			(uuid "1615d504-bc6a-4641-8d9e-b570f738fefd")
+		)
+		(pin "3"
+			(uuid "46dd8c75-b5ed-4a29-8d43-be1c6afef4e6")
+		)
+		(pin "5"
+			(uuid "87bdc7bd-fa3c-40a8-82bb-648b48f81118")
+		)
+		(pin "4"
+			(uuid "4e430c00-854e-480a-bee1-f48708da0d04")
+		)
+		(pin "6"
+			(uuid "6c1ac8b2-9e8f-4fb0-ad67-27a0727f3a81")
+		)
+		(pin "2"
+			(uuid "a1e22e16-d49a-4905-b3d4-574e57a69425")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 208.28 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a84ba529-a8ed-42f5-8844-dfa2df1f246c")
+		(property "Reference" "R5"
+			(at 210.82 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150Ω"
+			(at 210.82 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 206.502 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 208.28 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a4a90b42-e6f5-4072-aab5-7be65572ffb9")
+		)
+		(pin "2"
+			(uuid "c83dfba2-ec3e-4864-987c-68ba7caa7531")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 281.94 115.57 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b31a7386-4da9-43e4-842e-ad9879e0da23")
+		(property "Reference" "#PWR09"
+			(at 288.29 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 285.75 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 281.94 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 281.94 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 281.94 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df440df4-68e5-423b-a292-34c8435e5d46")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+15V")
+		(at 195.58 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4cc54f9-36f3-49ce-bdcb-319ad2665ba2")
+		(property "Reference" "#PWR02"
+			(at 195.58 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+15V"
+			(at 195.58 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 195.58 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b39c8408-8070-4c53-b9dd-288194b3dd11")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 218.44 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd86d911-c415-4e38-99d0-c47c64bac4dd")
+		(property "Reference" "R7"
+			(at 220.98 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150Ω"
+			(at 220.98 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 216.662 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 218.44 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1550b7b-3231-4c79-8709-76fdfe6470c4")
+		)
+		(pin "2"
+			(uuid "73f60c00-c18f-4ceb-983f-36b5cf456c51")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 276.86 115.57 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c32ac273-5028-436c-b98d-130392cd8f2c")
+		(property "Reference" "C2"
+			(at 276.8663 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 276.8663 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 276.86 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 276.86 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d3ee8eb-e6d2-4fbf-9041-cdd0f767cd09")
+		)
+		(pin "2"
+			(uuid "6a903af2-9360-4493-844a-4cd8456bbd14")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 236.22 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc052114-7d11-4277-a37a-3c80b09f9067")
+		(property "Reference" "R9"
+			(at 238.76 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150Ω"
+			(at 238.76 172.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.442 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 236.22 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28e49d3f-5aa8-4ec5-8d22-8c8c0e1ac8cf")
+		)
+		(pin "2"
+			(uuid "7af08b00-6f64-44bc-814d-bce6865020ab")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 250.19 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce1635e7-4ea1-4e3b-a2e6-1dbc86dea663")
+		(property "Reference" "#PWR06"
+			(at 250.19 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 250.19 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b494f71e-18d7-4bc9-b814-e9b9229d48be")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 276.86 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d574a77a-cba3-48e9-a7f8-46402ee38084")
+		(property "Reference" "C3"
+			(at 276.8663 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 276.8663 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 276.86 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 276.86 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8fc1f913-7f5e-4696-a6a2-37c7002a94bb")
+		)
+		(pin "2"
+			(uuid "9cd77b9d-9f85-4336-a807-8a17ac6f19a3")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 294.64 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9158c7d-b754-41aa-a93a-1f4983e85a81")
+		(property "Reference" "R11"
+			(at 297.18 142.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5kΩ"
+			(at 297.18 144.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 292.862 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 294.64 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 294.64 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03e4d1a3-4409-4b0f-bb5d-7dbc7fdc9658")
+		)
+		(pin "2"
+			(uuid "5cfca3aa-471a-468a-ac04-a5ba86f438ae")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 222.25 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9ed2cf1-a0be-4bfe-97a6-c24498897ee6")
+		(property "Reference" "#PWR04"
+			(at 222.25 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 222.25 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 222.25 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "060bb3b1-a57b-43d6-aa72-97cf76c86226")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:JFE2140D")
+		(at 138.43 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "df71c9ad-04de-4023-a108-6b843a1ee766")
+		(property "Reference" "Q1"
+			(at 142.875 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JFE2140D"
+			(at 142.875 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 138.43 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+			(at 138.43 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+			(at 138.43 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "2f5d4ac6-2ba2-4d4c-ab5f-c37e77516dda")
+		)
+		(pin "8"
+			(uuid "61a10bca-f3ff-4043-9c2e-b44a534a0735")
+		)
+		(pin "3"
+			(uuid "8d711768-40f7-4125-9c83-f3f79b128561")
+		)
+		(pin "7"
+			(uuid "36a28f73-c9a7-4062-8072-f7a779e92eec")
+		)
+		(pin "2"
+			(uuid "d24cc43e-f049-4acc-b3f0-034d966970be")
+		)
+		(pin "6"
+			(uuid "8c46be88-10ea-4d7b-ace9-36dc89612c93")
+		)
+		(pin "4"
+			(uuid "a8cebc55-2f71-4a75-83ca-066fcaaaf737")
+		)
+		(pin "1"
+			(uuid "53d9b931-bd08-41e8-9028-230a9b5ec64b")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 128.27 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edfab59f-3c1d-40f4-a36e-743583a8071b")
+		(property "Reference" "R1"
+			(at 130.81 160.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 130.81 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 126.492 161.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 128.27 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6c012ec-7c59-4fa3-8f50-6623defad8d5")
+		)
+		(pin "2"
+			(uuid "1889c0fd-32bd-4a3d-9bd9-8ea0f0b5466e")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:JFE2140D")
+		(at 210.82 149.86 0)
+		(mirror y)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee3aff63-dd2c-4f1b-9b63-b56e6e0fb514")
+		(property "Reference" "Q4"
+			(at 205.74 153.035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JFE2140D"
+			(at 205.74 155.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 210.82 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/jfe2140.pdf"
+			(at 210.82 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ultra-Low Noise, Matched, Dual, Low-Gate Current, Discrete, Audio, N‑Channel JFET, SOIC-8"
+			(at 210.82 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "b41aed39-23b0-4b09-96d0-a488ec49ee35")
+		)
+		(pin "2"
+			(uuid "f7b5e0ed-0fda-49aa-9e79-46c48783a7b6")
+		)
+		(pin "1"
+			(uuid "6ea9297b-91a7-44f0-ab7b-eaa6c25ab468")
+		)
+		(pin "8"
+			(uuid "8a131069-dbdc-40f4-a8c4-1ae3e96a4f0b")
+		)
+		(pin "5"
+			(uuid "01aab72a-f299-4001-bf0a-df3cb1f8da55")
+		)
+		(pin "4"
+			(uuid "cedf5d7e-b80a-47c6-a24c-06fee86c2fc6")
+		)
+		(pin "3"
+			(uuid "10865aab-21ef-4088-8cd8-e116fd1c710a")
+		)
+		(pin "6"
+			(uuid "99dcdcac-c984-44b5-a70d-e83af174ad3a")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "Q4")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 250.19 171.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f027fc62-fe54-4e0b-981d-cdcf7a8a0dcf")
+		(property "Reference" "R10"
+			(at 252.73 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150Ω"
+			(at 252.73 172.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.412 171.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 250.19 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f550096-194e-4549-8e41-289daf6ad6d2")
+		)
+		(pin "2"
+			(uuid "89441b83-96cf-4ffc-9ef2-354ae09035c9")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 128.27 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa1b750d-2f2c-447d-8be4-2cb6805ce6a5")
+		(property "Reference" "#PWR01"
+			(at 128.27 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.27 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 128.27 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef9b7946-9316-4c9a-b925-403eb5dfc040")
+		)
+		(instances
+			(project "LNA amplifier"
+				(path "/2d8e6652-03d7-421b-89e4-394e45870b63"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )
