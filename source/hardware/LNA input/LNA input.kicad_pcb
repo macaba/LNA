@@ -82,7 +82,7 @@
 		)
 	)
 	(net 0 "")
-	(footprint "Project:746600330"
+	(footprint "LNA input:746600330"
 		(layer "B.Cu")
 		(uuid "947009eb-ca01-4077-8552-f1481eaa653f")
 		(at 165 117.5 180)
@@ -114,7 +114,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Project:746600330"
+		(property "Footprint" "LNA input:746600330"
 			(at 0 8 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -193,7 +193,7 @@
 			)
 		)
 	)
-	(footprint "Project:746600330"
+	(footprint "LNA input:746600330"
 		(layer "B.Cu")
 		(uuid "b1c6efbf-6b73-41ec-8c35-1d8980f46886")
 		(at 125 82.5 180)
@@ -225,7 +225,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Project:746600330"
+		(property "Footprint" "LNA input:746600330"
 			(at 0 8 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -304,7 +304,7 @@
 			)
 		)
 	)
-	(footprint "Project:746600330"
+	(footprint "LNA input:746600330"
 		(layer "B.Cu")
 		(uuid "bba9f627-0cab-4c49-ac1d-f58945ef3221")
 		(at 165 82.5 180)
@@ -336,7 +336,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Project:746600330"
+		(property "Footprint" "LNA input:746600330"
 			(at 0 8 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -415,7 +415,7 @@
 			)
 		)
 	)
-	(footprint "Project:746600330"
+	(footprint "LNA input:746600330"
 		(layer "B.Cu")
 		(uuid "e2cef4e3-8fc4-40d7-80f8-dc685e7ae6b1")
 		(at 125 117.5 180)
@@ -447,7 +447,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "Project:746600330"
+		(property "Footprint" "LNA input:746600330"
 			(at 0 8 0)
 			(unlocked yes)
 			(layer "B.Fab")
