@@ -80,6 +80,28 @@
 	)
 	(fp_circle
 		(center 0 0)
+		(end 2 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Mask")
+		(uuid "92bcd63b-5233-4bf8-a673-4a28157c073c")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3.175 0)
+		(stroke
+			(width 2.45)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Mask")
+		(uuid "202e9e98-5e4d-4886-97b8-8960786ee404")
+	)
+	(fp_circle
+		(center 0 0)
 		(end 1.6 0)
 		(stroke
 			(width 0.05)
